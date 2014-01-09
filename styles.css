@@ -44,3 +44,12 @@ pre {
 	padding: 0.5em;
 	overflow: auto;
 }
+
+@media (max-width: 480px) {
+	#top h1 {
+		font-size: 26px;
+	}
+	#top h2 {
+		font-size: 14px;
+	}
+}
