@@ -7,7 +7,7 @@
 	    "slider",
         "effect"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "David Simpson",
         "url": "http://davidsimpson.me/"
@@ -15,7 +15,7 @@
     "maintainers": [
         {
         "name": "David Simpson",
-		"email": "david+scrollupmenu@davidsimpson.me"
+		"email": "david+scrollupmenu@davidsimpson.me",
         "url": "http://davidsimpson.me/"
         }
     ],
