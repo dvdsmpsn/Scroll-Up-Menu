@@ -1,0 +1,34 @@
+{
+    "name": "scrollupmenu",
+    "title": "jQuery Scroll Up Menu",
+    "description": "A simple mobile optimised menuing system which gets out of the way when you're not using it.",
+    "keywords": [
+	    "navigation",
+	    "slider",
+        "effect"
+    ],
+    "version": "1.0.02",
+    "author": {
+        "name": "David Simpson",
+        "url": "http://davidsimpson.me/"
+    },
+    "maintainers": [
+        {
+        "name": "David Simpson",
+		"email": "david+scrollupmenu@davidsimpson.me"
+        "url": "http://davidsimpson.me/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+    ],
+    "bugs": "https://github.com/dvdsmpsn/Scroll-Up-Menu/issues",
+    "homepage": "https://github.com/dvdsmpsn/Scroll-Up-Menu",
+    "docs": "httpshttps://github.com/dvdsmpsn/Scroll-Up-Menu",
+    "dependencies": {
+        "jquery": ">=1.3"
+    }
+}
