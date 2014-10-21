@@ -1,3 +1,4 @@
+/* global jQuery */
 /**
  *  Project:      Scroll Up For Menu
  *  Description:  A simple mobile optimised menuing system which gets out of the way when you're not using it.
@@ -12,14 +13,15 @@
  */
 ;(function ( $, window, document, undefined ) {
 
-	var pluginName = "scrollUpMenu";
+	var pluginName = 'scrollUpMenu';
 	var defaults = {
 			waitTime: 200,
 			transitionTime: 150,
-			menuCss: { 'position': 'fixed', 'top': '0'}
+			menuCss: { 'position': 'fixed', 'top': '0'},
+			showDelta: 0
 	};
 
-	var lastScrollTop = 0;				
+	var lastScrollTop = 0;
 	var $header;
 	var timer;
 	var pixelsFromTheTop;
@@ -41,25 +43,28 @@
 			$header.css(self.settings.menuCss);
 			pixelsFromTheTop = $header.height();
 			
-			$header.next().css({ 'margin-top': pixelsFromTheTop });
+			// $header.next().css({ 'margin-top': pixelsFromTheTop });
 		
 			$(window).bind('scroll',function () {
 				clearTimeout(timer);
 				timer = setTimeout(function() {
-					self.refresh(self.settings) 
+					self.refresh(self.settings);
 				}, self.settings.waitTime );
 			});
 		},
-		refresh: function (settings) { 
-			// Stopped scrolling, do stuff...				   			
+		refresh: function (settings) {
+			// Stopped scrolling, do stuff...
 			var scrollTop = $(window).scrollTop();
+			var change = lastScrollTop - scrollTop;
 
 			if (scrollTop > lastScrollTop && scrollTop > pixelsFromTheTop){ // ensure that the header doesnt disappear too early
 				// downscroll
 				$header.slideUp(settings.transitionTime);
 			} else {
 				// upscroll
-				$header.slideDown(settings.transitionTime);
+				if ( change > settings.showDelta ) {
+					$header.slideDown(settings.transitionTime);
+				}
 			}
 			lastScrollTop = scrollTop;
 		}
@@ -67,8 +72,8 @@
 
 	$.fn[ pluginName ] = function ( options ) {
 		return this.each(function() {
-				if ( !$.data( this, "plugin_" + pluginName ) ) {
-						$.data( this, "plugin_" + pluginName, new Plugin( this, options ) );
+				if ( !$.data( this, 'plugin_' + pluginName ) ) {
+						$.data( this, 'plugin_' + pluginName, new Plugin( this, options ) );
 				}
 		});
 	};
