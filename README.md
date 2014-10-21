@@ -2,7 +2,7 @@
 
 ## Born out of annoyance
 
-Fixed headers and menus are everywhere on mobile sites. I hate then. On iOS for example, they really get in the way if you're viewing a page in a WebView for some application. This isn't a big deal on Android because the browser takes control.
+Fixed headers and menus are everywhere on mobile sites. I hate them. On iOS for example, they really get in the way if you're viewing a page in a WebView for some application. This isn't a big deal on Android because the browser takes control.
 
 Either way, fixed headers are really annoying, especially when paired with fixed footers for advertisments.
 
@@ -20,6 +20,6 @@ Usage:
 $('#top').scrollUpMenu();
 ````
 
-This assumes that the header is contained in a `#top` selector.
+This example assumes that the header is contained in a `#top` selector.
 
 [Fork me on Github](https://github.com/dvdsmpsn/Scroll-Up-Menu).
