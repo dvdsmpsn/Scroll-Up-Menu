@@ -5,7 +5,7 @@
  *  License:      Apache License, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0.html>
  *  Source:       http://github.com/dvdsmpsn/scroll-up-for-menu
  *
- *  Usage:        $('#top').scrollUpForMenu(options);
+ *  Usage:        $('#top').scrollUpMenu(options);
  *      
  *
  *
