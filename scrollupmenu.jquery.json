@@ -27,7 +27,7 @@
     ],
     "bugs": "https://github.com/dvdsmpsn/Scroll-Up-Menu/issues",
     "homepage": "https://github.com/dvdsmpsn/Scroll-Up-Menu",
-    "docs": "httpshttps://github.com/dvdsmpsn/Scroll-Up-Menu",
+    "docs": "https://github.com/dvdsmpsn/Scroll-Up-Menu",
     "dependencies": {
         "jquery": ">=1.3"
     }
